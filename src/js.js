@@ -4,10 +4,12 @@ $(document).ready(function(){
 		'left':'auto'
 	});
 	$('#menu li a').click(function(){
+		$('#menu ul li:last').append('<li><a href="#">Item 1</a></li>');
 		if ($(this).parent().find('ul').is(':hidden'))
-			 $(this).parent().find('ul').stop(true, true).slideDown();
+			 $(this).parent().find('ul').slideDown();
 		else
-			 $(this).parent().find('ul').stop(true, true).slideUp();
+			 $(this).parent().find('ul').slideUp();
 		console.log('yikers');
 	});
 });
+
