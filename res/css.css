@@ -1,9 +1,16 @@
+
+/*
 li{
 	float: left;
 	margin: 25px;
 }
+*/
 
 #menu li{
 	text-decoration: none;
 	border: 1px solid red;
+}
+
+#menu{
+	display: none;
 }
